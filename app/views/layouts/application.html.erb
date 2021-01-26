@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>芳春寺</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <link rel="stylesheet" href="slick.css">
+    <link rel="stylesheet" href="slick-theme.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Sawarabi+Mincho&display=swap" rel="stylesheet">
+  </head>
+  <header>
+  <h1 class=text>芳春寺</h1>
+
+  </header>
+
+  <body>
+    <%= yield %>
+  </body>
+  <footer class= footer>
+  <h1 class=text>芳春寺</h1>
+  <p class=text>名古屋市瑞穂区東栄町４−４−２ / 000-0000-000</p>
+  </footer>
+</html>
