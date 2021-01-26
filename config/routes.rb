@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-     root 'comments#index'
+     root 'comments#new'
     resources :comments do
     collection do
       post 'purchase'

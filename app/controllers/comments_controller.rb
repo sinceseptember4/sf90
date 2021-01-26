@@ -1,17 +1,18 @@
 class CommentsController < ApplicationController
-    def index
+    def new
+        @comments=Comment.new
     end
     
     def show
-        @comment =Comment.all
+      @comments =Comment.all
     end
     
     def create
-         Comment.create( address: comment_params[:address],comment: comment_params[:comment])
-    end
+    Comment.create(comment_params)
+  end
     
     def destry
-        @comment = Comment.find(params[:id])
+        @comments = Comment.find(params[:id])
     end
     
     def purchase

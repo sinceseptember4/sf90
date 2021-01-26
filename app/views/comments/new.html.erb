@@ -3,17 +3,9 @@
 <div class="bg bg3"></div>
 <div class="slick1">
 <img class =img src="/assets/IMG_1254.jpg" alt=""> 
-<img class =img src="/assets/IMG_1256.jpg" alt=""> 
-<img class =img src="/assets/IMG_1257.jpg" alt=""> 
+
 </div>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-    <script src="slick.min.js"></script>
-    <script type="text/javascript">
-      $(function(){
-          $('.slick1').slick({
-          });
-      });
-    </script>
+
 
 
 <img class=img2 src="/assets/IMG_3058.jpg" alt="">
@@ -23,11 +15,22 @@
 </div>
     <img class=img3 src="/assets/IMG_3061.jpg" alt="">
     <div class= enclosure>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<script src="slick.min.js"></script>
+
+<script type="text/javascript">
+  $(function(){
+      $('.slick1').slick({
+        autoplay: true,
+        dots: true,
+      });
+    });
+</script>
     <div class=message>
     <form class=form >
     <h1 class=text>お問い合わせ</h1>
     <p class=text>housyunji@gmail.com  　☎052-841-0248</p>
-     <%= form_tag('/comments', method: :post) do %>
+      <%= form_tag('/comments', method: :post) do %>
     <input type="string" name="address"placeholder="メールアドレス、連絡先"></input>
     <textarea type="text" name="comment" placeholder= "内容"></textarea>
     <input class=btn type="submit" value="送信">
@@ -36,6 +39,11 @@
     </div>
     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d232.63613643916486!2d136.93528162617326!3d35.13460410252436!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60037a671d1461bd%3A0xaf918be047bea798!2z6Iqz5pil5a-6!5e0!3m2!1sja!2sjp!4v1611223446566!5m2!1sja!2sjp" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
     </div>
-    <%= form_tag(action: :purchase, method: :post) do %>
-<script type="text/javascript" src="https://checkout.pay.jp" class="payjp-button" data-key="<%= ENV["PAYJP_PUBLIC_KEY"] %>"></script>
+    <% form_tag(action: :purchase, method: :post) do %>
+<script type="text/javascript" src="https://checkout.pay.jp" class="payjp-button" data-key="<% ENV["PAYJP_PUBLIC_KEY"] %>"></script>
 <% end %>
+
+<footer class= footer>
+  <h1 class=text>芳春寺</h1>
+  <p class=text>名古屋市瑞穂区東栄町４−４−２ / 000-0000-000</p>
+  </footer>
