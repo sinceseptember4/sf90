@@ -1,0 +1,9 @@
+
+[1mFrom:[0m /home/ec2-user/environment/housyunji/app/controllers/comments_controller.rb:3:
+[1mOwner:[0m CommentsController
+[1mVisibility:[0m public
+[1mSignature:[0m index()
+[1mNumber of lines:[0m 2
+
+[32mdef[0m [1;34mindex[0m
+[32mend[0m

@@ -1,20 +1,20 @@
+
 class CommentsController < ApplicationController
-    def new
-        @comments=Comment.new
+    def index
     end
-    
+
     def show
       @comments =Comment.all
     end
-    
+
     def create
     Comment.create(comment_params)
   end
-    
+
     def destry
         @comments = Comment.find(params[:id])
     end
-    
+
     def purchase
     Payjp.api_key = ENV["PAYJP_SECRET_KEY"] 
     Payjp::Charge.create(
@@ -23,7 +23,7 @@ class CommentsController < ApplicationController
       :currency => 'jpy'
     )
   end
-  
+
    private
   def comment_params
     params.permit(:comment, :address)
