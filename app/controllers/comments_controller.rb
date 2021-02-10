@@ -1,6 +1,7 @@
 
 class CommentsController < ApplicationController
     def index
+      Comment.create(comment_params)
     end
 
     def show
