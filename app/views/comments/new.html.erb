@@ -1,0 +1,5 @@
+<div class =space></div>
+<% @comments.each do |t| %>
+<p><%=t.address%>---<%=link_to '削除',"/comments/#{@comment_id}", method: :delete%></p>
+<p><%=t.comment%></p>
+<%end%>

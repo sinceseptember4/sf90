@@ -4,13 +4,13 @@ class CommentsController < ApplicationController
       Comment.create(comment_params)
     end
 
-    def show
+    def new
       @comments =Comment.all
     end
 
     def create
     Comment.create(comment_params)
-  end
+    end
 
     def destry
         @comments = Comment.find(params[:id])
@@ -23,7 +23,7 @@ class CommentsController < ApplicationController
       :card => params['payjp-token'],
       :currency => 'jpy'
     )
-  end
+    end
 
    private
   def comment_params

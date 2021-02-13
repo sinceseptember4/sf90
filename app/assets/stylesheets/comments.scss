@@ -1,6 +1,9 @@
 // Place all the styles related to the comments controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+// Place all the styles related to the comments controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
 header {
 
 background-color: rgba;
@@ -14,6 +17,13 @@ padding: 10px 30px 10px 30px;
   text-align:center;
 }
 }
+iframe {
+  margin-top: 35px;
+  margin-right-width: 0px;
+  
+  margin-left-width: 0px;
+  text-align: center;
+  }
 .logo {
   width: 250px;
   height: 70px}
@@ -57,7 +67,6 @@ padding: 10px 30px 10px 30px;
   text-align:center;
   width: 1400px;
     height: 100px;
-    margin: 10px;
 }
 
 
@@ -82,28 +91,27 @@ padding: 10px 30px 10px 30px;
   background-color:rgba(255,255,255,.8);
   border-radius: 10px;
   box-shadow:0 0 .25em rgba(0,0,0,.25);
-  margin: 0,50px,0,5px;
-  margin: 50px;
+    margin: 35px;
   width: 700px;
-  height: 350px;
+  height: 450px;
   text-align: center;
   float:right
-  
 }
-.adress{
- width: 300px;
+.message input{
+   display: block;
+   padding: 15px;
+  width: 300px;
  height: 30px;
- }
- 
- .letter{
-   width: 300px;
-   height: 70px;
-   }
-   
-  .btn {
+  }
+.textarea{
     width: 300px;
-    height: 30px;
-    }
+  height: 100px;
+  }
+.message input[type=submit]{
+  width: 332px;
+    height: 45px;
+  }
+
   .form{
      display: flex;
   flex-direction: column;
@@ -126,7 +134,7 @@ padding: 10px 30px 10px 30px;
   
   .enclosure{
     width: 1400px;
-  height: 450px;}
+  height: 550px;}
   .space {
     width: 1400px;
   height: 250px;}
