@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
      root 'comments#index'
-    resources :comments ,only: [:create,:show,:index,:destroy]do
+    resources :comments ,only: [:create,:new,:index,:destroy]do
     collection do
       post 'purchase'
     end
