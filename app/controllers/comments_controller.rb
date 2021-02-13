@@ -12,7 +12,7 @@ class CommentsController < ApplicationController
     Comment.create(comment_params)
     end
 
-    def destry
+    def destroy
         @comments = Comment.find(params[:id])
     end
 
