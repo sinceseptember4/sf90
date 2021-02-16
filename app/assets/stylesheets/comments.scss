@@ -98,12 +98,17 @@ iframe {
   float:right
 }
 .message input{
+   margin: 5px;
+ width: 300px;
+ background-color:rgba;
    display: block;
    padding: 15px;
-  width: 300px;
  height: 30px;
   }
-.textarea{
+.message textarea{
+   margin: 5px;
+   padding: 15px;
+   background-color:rgba;
     width: 300px;
   height: 100px;
   }
@@ -119,19 +124,7 @@ iframe {
     width: 700px;
   height: 300px;
     }
- .form input {
-   margin: 5px;
- width: 300px;
- background-color:rgba;}
- .form textarea{
-   margin: 5px;
-   display: block;
-   padding: 15px;
-   background-color:rgba;
-    width: 300px;
-  height: 100px;
-   }
-  
+ 
   .enclosure{
     width: 1400px;
   height: 550px;}

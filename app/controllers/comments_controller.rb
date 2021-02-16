@@ -1,7 +1,6 @@
 
 class CommentsController < ApplicationController
     def index
-      Comment.create(comment_params)
     end
 
     def new
@@ -9,9 +8,8 @@ class CommentsController < ApplicationController
     end
 
     def create
-    Comment.create(comment_params)
-    end
-
+      Comment.create(comment_params)
+  end
     def destroy
         @comments = Comment.find(params[:id])
     end
