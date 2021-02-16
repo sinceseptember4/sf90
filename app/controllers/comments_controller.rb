@@ -6,8 +6,10 @@ class CommentsController < ApplicationController
       @comments =Comment.all
     end
     def create
-      Comment.create(comment_params)
+      Comment.create(comment_params) 
     end
+    
+    
 def destroy
  @comment = Comment.find(params[:id])
 end
