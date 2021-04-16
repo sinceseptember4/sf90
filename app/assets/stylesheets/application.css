@@ -14,7 +14,9 @@
  *= require_self
  */
 
-
+body{
+  margin: 0;
+  }
 
 .footer {
   background-color:#6846A5;
@@ -22,6 +24,7 @@
   text-align:center;
   height:120px;
   padding: 10px;
+  margin: 0 ;
   }
 .text {
   font-family: 'Sawarabi Mincho', sans-serif;
